@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hiking Adventures</title>
+    <style>
+      
+      h1{
+        text-align:center;  
+      }
+      h2{
+        text-align:center;
+        font-family:garamond;
+      }
+      p{
+        line-height:1.5;
+        font-family:arial;
+        
+      }
+      img{
+        display:block;
+        margin:0 auto;
+        border-radius:10px;
+      }
+      .content{
+        max-width:700px;
+        margin:0 auto;
+        background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+        border-radius:20px;
+        color:#D3D3D3;
+
+      }
+      .more{
+        font-family:helvetica;
+        text-decoration:none;
+        font-size:14px;
+        color:#402a23;
+      }
+      .more:hover{
+        text-decoration:underline;
+      }
+      .developer{
+        font-family:courier;
+      }
+      .name{
+        color:#402a23;
+        text-decoration:underline;
+        font-weight:bold;
+      }
+      strong{
+        font-family:garamond;
+        font-size:22px;
+      }
+      ul{
+        list-style-type:square;
+        list-style-position:inside;
+        text-align:left;
+        font-family:helvetica;
+    
+      }
+      button{
+        display:block;
+        margin:0 auto;
+        padding:15px 20px;
+        background:#402a23;
+        color:#ffffff;
+        border:none;
+        border-radius:20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition:all 200ms ease-in-out;
+      }
+      button:hover{
+        background:#ffffff;
+        color:#000000;
+        cursor:pointer;
+      }
+      div{
+        text-align:center;
+        padding:30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/493/original/download.jpg?1727529580"width="100"/>
+        <br/>
+        Hiking:<em>An Adventure in Nature!</em>
+      </h1>
+      <h2>
+        Discovering the Great Outdoors
+      </h2>
+      <p>
+        Hiking is a general word for traveling on foot in wilderness or countryside. Day hikers return before nightfall. Other hikers may go out for many days. Sometimes large groups hike together. Hiking is a kind of physical activity as well as a leisure activity (a way of spending free time). Hikers (the people who do hiking) enjoy fresh air and the beauty of nature, and learn about the place. Many hikers enjoy challenging their physical and mental strength. Hiking with friends gives them the chance to become stronger.
+      </p>
+      <a href="https://simple.wikipedia.org/wiki/Hiking"class="more">Learn More on Wikipedia </a>
+      <hr/>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/526/original/StockCake-Family_Forest_Hike_1727535749.jpg?1727535795"width="500"/>
+      <hr/>
+      <strong>
+        Types of Hiking
+      </strong>
+      <p>
+        Hiking is not just a simple walk in the woods it’s an adventure that takes many forms. Whether you’re looking for a leisurely stroll or a challenging trek, there’s a type of hiking that fits your needs.Below are some of the most popular types of hiking, each offering a unique way to experience the great outdoors.
+      </p>
+      <ul>
+        <li>Day hiking</li>
+        <li>Backpacking</li>
+        <li>Urban hiking</li>
+        <li>Mountain hiking</li>
+        <li>Thru-hiking etc.</li>
+      </ul>
+      <p>
+        Share your preferred hiking experience, and we'll discuss its benefits and recommend the best locations based on your interests!
+      </p>
+      <button>
+        Start Hiking
+      </button>
+      <div class="developer">
+        Built by 
+        <span class="name">Ziprose Gori</span>
+      </div>
+    </div>
+    <script>
+    function findTrails() {
+      let firstName = prompt("What is your first name?");
+      let age = prompt("What hiking experience are you seeking?");
+      let answer= prompt("Would you like recommendations based on your chosen hiking experience?");
+      answer= answer.toLowerCase();
+      answer= answer.trim();
+      answer= answer.replace("yeah","yes");
+      
+      if (answer === "yes") {
+        alert("Hello "+firstName+", we'll follow up with details shortly. Thanks!");
+      } else {
+        alert("Thank you "+firstName+". Maybe next time");
+      } 
+    }
+    let startButton = document.querySelector("button");
+    startButton.addEventListener("click", findTrails);
+    </script>
+  </body>
+</html>
+  
